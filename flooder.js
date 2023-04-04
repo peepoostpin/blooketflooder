@@ -1,3 +1,6 @@
+// sets blook to black
+// too much deadcode!!!!!!!!11111
+
 (function(_0x336683, _0x2fbdbc) {
     const _0x1bb8dc = _0x336683();
 
