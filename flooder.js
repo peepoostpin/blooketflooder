@@ -3,11 +3,11 @@ document.body.append(i);
 window.prompt = i.contentWindow.prompt.bind(window);
 i.remove();
 
-const id = prompt("Game ID:");
-const name = prompt("Name:");
-const amount = parseInt(prompt("Amount:"));
-const b = prompt("Blook:");
-const bg = prompt("Banner:");
+const id = prompt("Game ID - e.g = 8540099:");
+const name = prompt("Name - e.g = ItzMeFard:");
+const amount = parseInt(prompt("Amount - e.g = 50:"));
+const b = prompt("Blook - e.g = Mega Bot:");
+const bg = prompt("Banner -ALL LOWERCASE- e.g = chocolate:");
 
 console.log(b);
 console.log(bg);
