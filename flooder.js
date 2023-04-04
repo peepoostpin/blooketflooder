@@ -9,6 +9,9 @@ const amount = parseInt(prompt("Amount:"));
 const b = parseInt(prompt("Blook:"));
 const bg = parseInt(prompt("Banner:"));
 
+console.log(b);
+console.log(bg);
+
 let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
 const axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a;
 const firebase = Object.values(webpack.c).find(x => x.exports?.a?.initializeApp).exports.a;
