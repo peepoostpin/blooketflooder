@@ -17,12 +17,12 @@ const axios = Object.values(webpack.c).find((x) => x.exports?.a?.get).exports.a;
 const firebase = Object.values(webpack.c).find(x => x.exports?.a?.initializeApp).exports.a;
 
 for (let i = 1; i <= amount; i++) {
-  const suffix = Math.random().toString(36).substring(2, 5).replace(/[^\w\-\/]/g, ''); // generate a random 3-letter suffix containing letters, numbers, dashes, and slashes
-  const username = `${name}-${suffix}`; // add the suffix to the original name
+  const suffix = Math.random().toString(36).substring(2, 5).replace(/[^\w\-\/]/g, '');
+  const username = `${name}-${suffix}`;
   (async () => {
     const { data: { success, fbToken, fbShardURL } } = await axios.put("https://fb.blooket.com/c/firebase/join", { id, name: username });
     if (!success) return;
-    console.log(`Added player: ${username}`); // log the added player's username
+    console.log(`added player: ${username}`);
     const liveApp = firebase.initializeApp({
         apiKey: "AIzaSyCA-cTOnX19f6LFnDVVsHXya3k6ByP_MnU",
         authDomain: "blooket-2020.firebaseapp.com",
