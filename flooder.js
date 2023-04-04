@@ -6,8 +6,8 @@ i.remove();
 const id = prompt("Game ID:");
 const name = prompt("Name:");
 const amount = parseInt(prompt("Amount:"));
-const b = prompt("Blook:"));
-const bg = prompt("Banner:"));
+const b = prompt("Blook:");
+const bg = prompt("Banner:");
 
 console.log(b);
 console.log(bg);
