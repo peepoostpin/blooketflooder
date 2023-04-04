@@ -1,3 +1,5 @@
+// made by me and minesraft2
+
 let i = document.createElement('iframe');
 document.body.append(i);
 window.prompt = i.contentWindow.prompt.bind(window);
