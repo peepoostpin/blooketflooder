@@ -39,5 +39,5 @@ for (let i = 1; i <= amount; i++) {
     await liveApp.database().ref(`${id}/c/${username}`).set({ b, bg });
     liveApp.delete();
   })();
-  await new Promise(r => setTimeout(r, 500));
+  await new Promise(r => setTimeout(r, 750));
 }
